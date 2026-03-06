@@ -24,8 +24,8 @@ sudo apt install -y python3-pip python3-venv git
 ### 3. 克隆项目
 
 ```bash
-git clone https://github.com/3ecurity/Latest24hZamaUsdtBianDotPlot.git
-cd Latest24hZamaUsdtBianDotPlot
+git clone https://github.com/cocilea/ZamaUsdtLatest24hBian.git
+cd ZamaUsdtLatest24hBian
 ```
 
 ### 4. 创建并激活虚拟环境
@@ -78,8 +78,8 @@ After=network.target
 
 [Service]
 User=<your_user>
-WorkingDirectory=/home/<your_user>/Latest24hZamaUsdtBianDotPlot
-ExecStart=/home/<your_user>/Latest24hZamaUsdtBianDotPlot/venv/bin/gunicorn -w 2 -b 0.0.0.0:5000 app:app
+WorkingDirectory=/home/<your_user>/ZamaUsdtLatest24hBian
+ExecStart=/home/<your_user>/ZamaUsdtLatest24hBian/venv/bin/gunicorn -w 2 -b 0.0.0.0:5000 app:app
 Restart=always
 
 [Install]
